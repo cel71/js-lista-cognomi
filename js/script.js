@@ -10,3 +10,5 @@ for (var i = 0; i < cognomi.length; i++) {
 htmlString += "</ul>";
 document.getElementById("surname").innerHTML = htmlString;
 var listaNumerata = cognomi.indexOf(cognomeUtente);
+console.log(listaNumerata + 1);
+
