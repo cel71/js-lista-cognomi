@@ -3,12 +3,10 @@ var cognomeUtente = prompt("Scrivi il tuo cognome");
 var cognomi = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
 cognomi.push(cognomeUtente);
 cognomi.sort();
-var htmlString = "<ul>";
-for (var i = 0; i < cognomi.length; i++) {
-    htmlString += "<li>" + cognomi[i] + "</li>";
+var listaHTML = "";
+for (var x = 0; x < cognomi.length; x++) {
+    listaHTML += "<li>" + cognomi[x] + "</li>";
 }
-htmlString += "</ul>";
-document.getElementById("surname").innerHTML = htmlString;
+document.getElementsByClassName("surname")[0].innerHTML = listaHTML;
 var listaNumerata = cognomi.indexOf(cognomeUtente);
 console.log(listaNumerata + 1);
-
